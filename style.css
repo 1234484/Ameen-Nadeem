@@ -1,0 +1,201 @@
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    background: url('./Car 1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h2{
+    margin-top: 30px;
+    text-align: center;
+	margin-left:60px;
+    top: 0;
+}
+
+
+      body{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		min-height:100vh;
+		background:#25252b;
+   }
+   .text{
+	margin-top: 30px;
+	align-items: center;
+	text-align: center;
+   }
+   .input-box{
+	margin-left:20px;
+   }
+   .container{
+	position:relative;
+	width:450px;
+	height:370px;
+	border:2px solid yellow;
+	box-shadow:0 0 25px yellow;
+	overflow:hidden;
+   
+   }
+   .container .form-box{
+	position:absolute;
+	top:0;
+	width:50%;
+	height:120%;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+   }
+   .form-box.login{
+		left:0;
+		padding:0 40px;
+   }
+   .form-box.Register{
+	display:none;
+	padding:0 60px;
+	right:0;
+   
+   }
+   .form-box h2{
+		font-size:32px;
+		text-align:center;
+   }
+   .form-box .input-box{
+		position:relative;
+		width:100%;
+		height:50px;
+		margin-top:25px;
+   }
+   .input-box input{
+		width:auto;
+		height:100%;
+		border:none;
+		outline:none;
+		background:transparent;
+		font-size:17px;
+		font-weight:600;
+		color:#fff;
+		border-bottom:3px solid #fff;
+		padding-right:134px;
+			transition:.5s;
+			
+   
+   }
+   .input-box input:focus,
+   .input-box input:valid{
+		border-bottom:3px solid yellow;
+   }
+   .input-box label{
+		top:50%;
+		left:0;
+		position:absolute;
+		transform: translateY( -50%);
+		font-size:16px;
+		color:#fff;
+		transition:.5s;
+   }
+   .input-box input:focus ~ label,
+   .input-box input:valid ~ label{
+		top:-5px;
+		color:yellow;
+   }
+   .input-box i{
+		position:relative;
+		top:-24;
+		margin-left:430px;
+		padding-left:450px;
+		right:0;
+		color:white;
+		
+		left:20;
+		transform: translateY( -50%);
+		font-size:18px;
+		transition:.5s;
+   }
+    .input-box input:focus ~ i,
+   .input-box input:valid ~ i{
+		color:Yellow;
+   }
+   .btn{
+   	width:260px;
+		height:45px;
+		background:transparent;
+		font-size:17px;
+		font-weight:600;
+		position:relative;
+		cursor:pointer;
+		border-radius:40px;
+		margin-left:40px;
+		border:2px solid yellow;
+		overflow:hidden;
+		z-index:1;
+		margin-top:10px;
+   }
+   .btn::before{
+		content:'';
+		width:100%;
+		height:300%;
+		background: linear-gradient(#25252b,#F5FC00,#25252b,#F5FC00);
+		font-size:17px;
+		position:absolute;
+		top:-100%;
+		left:0;
+		z-index:-1;
+		transition:.5s;
+   
+   }
+   .btn:hover:before{
+		top:0;
+	}
+	.regi-link{
+	text-align:center;
+	margin:20px 0 10px;
+	font-size:17px;
+	}
+	.regi-link a{
+		text-decoration:none;
+		color:#F5FC00;
+		font-weight:600;
+		
+   }
+   .regi-link a:hover{
+		text-decoration:underline;
+		color:white;
+		font-weight:600;
+   }
+   .info-content{
+		position:absolute;
+		top:0;
+		width:50%;
+		height:100%;
+		display:flex;
+		justify-content:center;
+		flex-direction:column;
+   }
+   .info-content.login{
+		text-align:right;
+		right:0;
+		padding:0 40px 60px 150px;
+   
+   }
+   .info-content.Register{
+		text-align:right;
+		right:0;
+		padding:0 40px 60px 150px;
+		display:none;
+   }
+   .info-content h1{
+		line-height:1.3;
+		font-size:35px;
+   }
+   .info-content p{
+		font-size:19px;
+   
+   }
